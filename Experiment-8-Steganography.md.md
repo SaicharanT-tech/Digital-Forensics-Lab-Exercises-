@@ -40,8 +40,7 @@
 
 * Navigate to the folder where the `StegExpose.jar` file is located using your Command Prompt (Windows) or Terminal (Linux/macOS).
 
-![images/exp1-disk-step1.png](https://github.com/SaicharanT-tech/Digital-Forensics-Lab-Exercises-/blob/main/Images/8.6.png)
-
+![images/exp1-disk-step1.png](https://github.com/SaicharanT-tech/Digital-Forensics-Lab-Exercises-/blob/main/Images/8.8.png)
 
 ### 4. Run StegExpose on an Image
 
