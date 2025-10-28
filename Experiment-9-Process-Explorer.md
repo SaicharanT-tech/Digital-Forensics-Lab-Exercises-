@@ -58,7 +58,6 @@ It helps investigators and administrators analyze active processes, detect suspi
 5. Check for **Digital Signature**:
    - Valid signature = trusted developer  
    - No signature or invalid = possibly malicious
-![images/exp9-disk-step2.png](https://github.com/SaicharanT-tech/Digital-Forensics-Lab-Exercises-/blob/main/Images/WhatsApp%20Image%202025-10-27%20at%2023.05.00_d19b2f5e.jpg)
 ---
 
 ### **Step 4: Analyze Process Behavior**
@@ -87,7 +86,7 @@ It helps investigators and administrators analyze active processes, detect suspi
    - Right-click → **Suspend Process** to stop it temporarily for investigation.
 3. **After removal:**
    - Run a **Full System Scan** using Windows Defender or Malwarebytes to ensure no remnants remain.
-![images/exp9-disk-step2.png](https://github.com/SaicharanT-tech/Digital-Forensics-Lab-Exercises-/blob/main/Images/WhatsApp%20Image%202025-10-27%20at%2023.05.00_19478f7c.jpg)
+![images/exp9-disk-step2.png](https://github.com/SaicharanT-tech/Digital-Forensics-Lab-Exercises-/blob/main/Images/WhatsApp%20Image%202025-10-27%20at%2023.05.03_44b38fe9.jpg)
 ---
 
 ### **Step 7: Example Observation**
