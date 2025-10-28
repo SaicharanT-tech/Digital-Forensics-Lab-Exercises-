@@ -1,3 +1,4 @@
+
 ## Experiment No - 06: Use Sleuth Kit to Analyze Digital Evidence
 
 ### Description
@@ -11,7 +12,7 @@ The **Sleuth Kit (TSK)** is a suite of command-line tools for analyzing disk ima
     * Visit the official Sleuth Kit website or the provided Google Drive link (https://drive.google.com/drive/u/1/folders/1ilSFY7Tqn2L7AjQGhq8yJ8kixc_xTU-v) and download the latest Windows version.
 2.  **Install Sleuth Kit:**
     * Run the installer and follow the instructions to install Sleuth Kit on your Windows machine.
-
+![images/exp1-disk-step1.png](https://github.com/baddiputi/Digital-Forensic-Lab-Exercises/blob/8fd82d713c4b7318d0bbd94aa94d85a618efd599/images/6.1.jpeg)
 ---
 
 ### Step 2: Acquire the Disk Image
@@ -25,7 +26,7 @@ Before analysis, a **bit-by-bit copy** (disk image) of the storage device eviden
     * Download the following files from the Google Drive:
         * `4Dell Latitude CPi.E01`
         * `4Dell Latitude CPi.E02`
-
+![images/exp1-disk-step1.png](https://github.com/baddiputi/Digital-Forensic-Lab-Exercises/blob/8fd82d713c4b7318d0bbd94aa94d85a618efd599/images/6.3.jpeg)
 ---
 
 ### Step 3: Mount the Disk Image (Optional)
@@ -51,7 +52,7 @@ Use the Sleuth Kit command-line tools to examine the file system structure and l
         fsstat [image file] > filesystem_info.txt
         ```
     * **Purpose:** This command outputs detailed information about the file system, which is crucial for structural understanding.
-
+![images/exp1-disk-step1.png](https://github.com/baddiputi/Digital-Forensic-Lab-Exercises/blob/8fd82d713c4b7318d0bbd94aa94d85a618efd599/images/6.4.jpeg)
 3.  **List Partitions with `mmls`:**
     * **Command:**
         ```arduino
@@ -72,7 +73,7 @@ Use the Sleuth Kit command-line tools to examine the file system structure and l
         icat [image file] [inode number] > [output file]
         ```
     * **Purpose:** To extract a specific file, replace `[inode number]` with the inode found from the `fls` output.
-
+![images/exp1-disk-step1.png](https://github.com/baddiputi/Digital-Forensic-Lab-Exercises/blob/8fd82d713c4b7318d0bbd94aa94d85a618efd599/images/6.5.jpeg)
 ---
 
 ### Step 5: Analyze Metadata
@@ -85,10 +86,10 @@ Extract file metadata to gain insight into a file's history, creation, and usage
         istat [image file] [inode number] > metadata_info.txt
         ```
     * **Purpose:** Provides detailed information about a file, including **timestamps (MAC times)**, size, and allocation status.
-
+![images/exp1-disk-step1.png](https://github.com/baddiputi/Digital-Forensic-Lab-Exercises/blob/8fd82d713c4b7318d0bbd94aa94d85a618efd599/images/6.2.jpeg)
 ---
 
-### Step 6: Timeline Analysis (Optional)
+### Step 6: Timeline Analysis
 
 Creating a timeline of file activity is vital for reconstructing events.
 
@@ -105,7 +106,7 @@ Creating a timeline of file activity is vital for reconstructing events.
         mactime -b body.txt > timeline.txt
         ```
     * **Purpose:** Processes the body file to create a **timeline** (`timeline.txt`) sorted by the Modified, Accessed, and Changed (MAC) times of the files.
-
+![images/exp1-disk-step1.png](https://github.com/baddiputi/Digital-Forensic-Lab-Exercises/blob/8fd82d713c4b7318d0bbd94aa94d85a618efd599/images/6.7.jpeg)
 ---
 
 ### Step 7: Generate a Report
@@ -131,3 +132,4 @@ Ensure all evidence and reports are securely managed to maintain integrity and f
 **Result**
 
 The Sleuth Kit experiment successfully analyzed the provided .E01 disk image — partitions and file system structure were identified, deleted files were recovered (using fls/icat), and detailed file metadata was extracted (fsstat/istat). A timeline was generated with mactime to reconstruct file activity, and all outputs were archived with hashes to preserve evidence integrity.
+
